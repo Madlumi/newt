@@ -1,0 +1,4 @@
+tmpfile=$(mktemp)
+xsel --primary --output > "$tmpfile"
+out/newt "$tmpfile"
+rm "$tmpfile"
